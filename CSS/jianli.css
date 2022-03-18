@@ -1,0 +1,39 @@
+.spotLight{
+    color: transparent !important ;
+    position: relative;
+    min-width: 1200px;
+    display: inline-block;
+}
+
+.spotLight::after{
+    content: "More than fore-end";
+    color:transparent;
+    position: absolute;
+    top: 0px;
+    right: 188px;
+    animation: run 12s linear infinite;
+    background-image: url(https://img0.baidu.com/it/u=2498560419,3137445233&fm=253&fmt=auto&app=138&f=JPEG?w=579&h=500);
+    background-size: 150%;
+    background-position: center right;
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+ 
+}
+
+@keyframes run{
+    0%{clip-path:ellipse(260px 260px at 0% 50%);}
+    50%{clip-path:ellipse(260px 260px at 100% 50%);}
+    100%{clip-path:ellipse(260px 260px at 0% 50%);}
+}
+
+.skillBox {
+	display:inline-block;
+	margin: 10px;
+    padding: 12px 20px 12px 20px;
+	color: white;
+	background: black;
+    opacity: 0.7;
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
